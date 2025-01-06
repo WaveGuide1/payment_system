@@ -26,6 +26,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home_app.urls')),
     path('profile/', include('users_app.urls')),
+    path('payment/', include('stripe_integration.urls')),
     path('@<username>/', profile_view, name="profile"),
 ]
 
